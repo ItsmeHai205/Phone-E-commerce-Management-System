@@ -1,0 +1,131 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: calc(100vh - 280px);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  border-radius: var(--radius-lg);
+  background: rgba(var(--surface-rgb), 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(var(--primary-rgb), 0.1);
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.login-header h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.login-header p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.login-error-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  color: var(--danger-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.login-error-alert svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-submit-btn {
+  margin-top: 10px;
+  height: 48px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s infinite linear;
+}
+
+/* Dividers */
+.login-divider-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.login-divider-line::before, .login-divider-line::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(var(--border-rgb), 0.5);
+}
+
+.login-divider-line:not(:empty)::before {
+  margin-right: .5em;
+}
+
+.login-divider-line:not(:empty)::after {
+  margin-left: .5em;
+}
+
+/* Quick Fill shortcuts */
+.quick-fill-buttons {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.quick-fill-buttons button {
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  padding: 10px 14px;
+}
+
+.admin-fill-btn:hover {
+  border-color: rgba(var(--secondary-rgb), 0.4);
+  color: var(--secondary-color);
+}
